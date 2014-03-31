@@ -3,6 +3,7 @@ Blog::Application.routes.draw do
     collection do
       get :second_page
       get :index
+      get :destroy
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.

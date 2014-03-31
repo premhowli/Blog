@@ -9,6 +9,8 @@ class HomesController < ApplicationController
   end
   def create
     home = Home.create(home_params)
+
+    flash[:notice]="record saved"
     redirect_to action: :index, notice: 'Record saved'
   end 
 def edit
@@ -25,6 +27,14 @@ end
   def home_params
     params.require(:home).permit(:name,:email)
   end
+def destroy
+@data=Home.find(params[:id])
+@data.destroy(home_params)
+flash[:notice]= "Record deleted"
+redirect_to action: :index
+
+end
+
 
 end
 

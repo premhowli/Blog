@@ -27,6 +27,14 @@ end
   def home_params
     params.require(:home).permit(:name,:email)
   end
+def destroy
+@data=Home.find(params[:id])
+@data.destroy
+flash[:notice]= "Record deleted"
+redirect_to action: :index
+
+end
+
 
 end
 
