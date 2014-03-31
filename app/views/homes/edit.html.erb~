@@ -1,0 +1,15 @@
+<h1>Edit Post</h1>
+
+<%= form_for @data do |h| %>
+<p>
+  <%= h.label :name %><br>
+  <%= h.text_field :name %>
+</p>
+<p>
+  <%= h.label :email %><br>
+  <%= h.text_field :email %>
+</p>
+<p>
+  <%= h.submit "Update Your Details" %>
+</p>
+<% end %>

@@ -1,0 +1,16 @@
+class HomeController < ApplicationController
+  def index
+  end
+  
+
+  def second_page
+ @home=Home.new
+#        @home=home.new(params[:home])
+#	if @home.save  
+#	redirect_to root_index, :notice => "your details saved"
+#	else
+#	render "second_page"
+# end
+end
+end
+

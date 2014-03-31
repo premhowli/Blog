@@ -1,0 +1,19 @@
+
+
+
+<h1>Home#index</h1>
+<p>hello world</p>
+<table>                         
+  <tr>                          
+    <th>name</th>
+    <th>email</th>
+  </tr>
+<% @data.each do |data| %>       
+  <tr>
+    <td><%= data.name %></td>  
+    <td><%= data.email %></td>
+    <td><%= link_to "Edit", edit_home_path(data) %></td>
+  </tr>
+<% end %>                        
+</table>                   
+<%= link_to "Second Page", second_page_homes_path %>

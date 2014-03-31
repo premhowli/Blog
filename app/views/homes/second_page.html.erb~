@@ -1,0 +1,15 @@
+<h1>Home#second_page</h1>
+<p>add details</p>
+<%= form_for @home do |h| %>
+<p>
+  <%= h.label :name %><br>
+  <%= h.text_field :name %>
+</p>
+<p>
+  <%= h.label :email %><br>
+  <%= h.text_field :email %>
+</p>
+<p>
+  <%= h.submit "Add Your Details" %>
+</p>
+<% end %>
