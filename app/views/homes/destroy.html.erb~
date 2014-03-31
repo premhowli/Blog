@@ -1,4 +1,0 @@
-<h1>Destroy Post</h1>
-<p>
-<%= h.submit "Destroy Your Details" %>
-</p>
